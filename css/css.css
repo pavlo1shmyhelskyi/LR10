@@ -1,0 +1,146 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #01A3C9; /* Основний фон сайту */
+}
+
+header {
+  padding: 20px 0;
+  background-color: #2D3A43;
+  border-bottom: 1px solid #F11940;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #FEDB7F;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #F11940;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+.hero .hero-content {
+  max-width: 600px;
+  flex: 1;
+  order: 1;
+}
+
+.hero .hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2D3A43;
+  margin-bottom: 20px;
+  font-family: 'Chaotic Connection', sans-serif;
+}
+
+.hero .hero-content p {
+  font-size: 1.4rem;
+  color: #FEDB7F;
+}
+
+.hero .hero-content .btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #F11940, #FEDB7F);
+  color: #2D3A43;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(241, 25, 64, 0.4);
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.hero .hero-content .btn:hover {
+  background: linear-gradient(135deg, #FEDB7F, #F11940);
+  box-shadow: 0 6px 18px rgba(241, 25, 64, 0.6);
+  transform: scale(1.08);
+}
+
+.hero .hero-image {
+  flex: 1;
+  text-align: center;
+  order: 2;
+}
+
+.hero .hero-image img {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  color: #FEDB7F;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Chaotic Connection', sans-serif;
+}
+
+.nav-links a:hover {
+  color: #F11940;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 10%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
